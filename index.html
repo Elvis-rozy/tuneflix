@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--===== Link to Stylesheet =====-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--===== Page Title=====-->
+  <title>tuneflix home</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <a href="#">tune<span>flix</span></a>
+    </div>
+  </header>
+  <!--===== Hero section =====-->
+  <main>
+    <!--===== Sidebar =====-->
+    <section class="side-bar">
+      <div class="categories">
+        <h4 class="active sect music"><span></span><img src="images/icons/music-note-beamed.svg" alt="">Music</h4>
+        <h4 class="sect video"><span></span><img src="images/icons/video-play.svg" alt="">Videos</h4>
+      </div>
+      <ul class="songs"></ul>
+      <ul class="video-links">
+        <li><img src="images/icons/search.svg" alt="">Web Series</li>
+        <li><img src="images/icons/search.svg" alt="">Tv Shows</li>
+        <li><img src="images/icons/search.svg" alt="">Movies</li>
+      </ul>
+      <!--===== Contact Section =====-->
+      <ul class="aboutUs">
+        <li>About</li>
+        <li>Contact Us</li>
+      </ul>
+    </section>
+
+    <section class="discover height-music">
+      <nav class="nav-bar">
+        <ul class="links">
+          <li class="on li">Discover</li><!----><li class="li">Favorites</li><!----><li class="li">About</li><!----><li class="li">Contact Us</li>
+        </ul>
+        <div class="search-form">
+          <img src="images/icons/search.svg" alt="search icon">
+          <input type="search" id="search-bar" name="search-bar" placeholder="Search ...">
+        </div>
+      </nav>
+      <div class="playing">
+        <img class="active-img" src="images/background/alan-walker.jpg" alt="album cover">
+        <h1 class="activeSongName">Alan Walker - Faded</h1>
+        <p class="activeSongDesc">You were the shadow to my light did you feel
+          us, Another start<br>you fade away. Afraid our aim
+          is out of sight wanna see us alive.
+        </p>
+        <div class="buttons">
+          <button class="cta-on button">PLAY</button>
+          <button class="button">FOLLOW</button>
+        </div>
+      </div>
+      <div class="cards music-arr">
+        <h3>Popular Songs</h3>
+        <div class="new grid-col-big snaps-inline"></div>
+      </div>
+
+      <div class="cards movie-arr">
+        <h3>Popular Videos</h3>
+        <div class="video-sect new grid-col-big snaps-inline"></div>
+      </div>
+
+      <div class="cards top-movies-arr">
+        <h3>Top Videos</h3>
+        <div class="top-video-sect new grid-col-big snaps-inline">
+        </div>
+      </div>
+
+      <div class="cards artist-arr">
+        <h3>Popular Artists</h3>
+        <div class="new grid-col-small snaps-inline"></div>
+      </div>
+    </section>
+
+    <section class="master-play">
+      <div class="wave">
+        <span class="wave1"></span>
+        <span class="wave1"></span>
+        <span class="wave1"></span>
+        <span class="wave1"></span>
+        <span class="wave1"></span>
+        <span class="wave1"></span>
+        <span class="wave1"></span>
+      </div>
+      <img id="track_image" src="" alt="cover image">
+      <div class="details">
+        <h5 id="title"></h5>
+        <p id="artist"></p>
+      </div>
+      <div class="icons">
+        <img id="prev" onclick="previous_song()" src="images/icons/skip-backward-fill.svg" alt="skip backward icon">
+        <img id="play" class="playBtn" src="images/icons/play-fill.svg" alt="play icon">
+        <img id="next" src="images/icons/skip-forward-fill.svg" alt="skip forward icon">
+      </div>
+      <span id="current-start">0:00</span>
+      <div class="bar">
+        <input type="range" id="seek" min="0" value="0" max="100">
+        <div class="bar2" id="bar2"></div>
+        <div class="dot"></div>
+      </div>
+      <span id="current-end">0:00</span>
+      <div class="vol">
+        <img id="vol-icon" src="images/icons/volume-down.svg" alt="volume down icon">
+        <input type="range" id="vol" min="0" value="0" max="100">
+        <div class="vol-bar"></div>
+        <div class="dot" id="vol-dot"></div>
+      </div>
+    </section>
+
+    <section class="video-playing">
+      <video class="active-video" src="" controls></video>
+    </section>
+
+  </main>
+  <script src="app/js/script.js"></script>
+</body>
+</html>
